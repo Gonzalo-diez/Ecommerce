@@ -83,3 +83,9 @@ for(const mercancia of mercancias) {
   console.log(mercancia.cantidad)
   console.log(mercancia.precio)
 }
+
+const producto1 = {id: 3, producto: "Nike amarillas", cantidad: 40, precio: "$14500"};
+const array = [producto1, {id:2, producto: "Nike azules", cantidad: 7, precio: "$15000"}];
+array.push = ({id:1, producto: "Nike rojas", cantidad: 50, precio: "$16000"});
+
+console.log(array)
