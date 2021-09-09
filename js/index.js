@@ -74,8 +74,8 @@ let mercancia3 = new mercancia ("Nike amarillas", 40, "$16000");
 console.log(mercancia3)
 
 const mercancias = [{id: 1, producto: "Nike rojas", cantidad: 50, precio: "$16000"},
-                   {id: 2, producto: "Nike azules", cantidad: 7, precio: "$16000"},
-                   {id: 3, producto: "Nike amarillas", cantidad: 40, precio: "$16000"}];
+                   {id: 2, producto: "Nike azules", cantidad: 7, precio: "$15000"},
+                   {id: 3, producto: "Nike amarillas", cantidad: 40, precio: "$14500"}];
 
 for(const mercancia of mercancias) {
   console.log(mercancia.id)
