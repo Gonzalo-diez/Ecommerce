@@ -81,7 +81,7 @@ header .icons a:hover {
     margin: 25px auto;
 }
 .wrapper .search-input{
-    background: #fff;
+    background: var(--blanco);
     width: 100%;
     border-radius: 5px;
     position: relative;
@@ -102,7 +102,7 @@ header .icons a:hover {
 }
 .search-input .autocom-box{
     width: 100%;
-    background: #fff;
+    background: var(--blanco);
     position: absolute;
     padding: 0;
     opacity: 0;
@@ -149,7 +149,8 @@ header .icons a:hover {
 
 .productos {
     display: flex;
-    flex-direction: wrap;
+    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-evenly;
     margin-top: 15%;
     margin-left: 2%;
@@ -157,11 +158,62 @@ header .icons a:hover {
 
 .productos .box-container {
     width: 30%;
-    background: var(--gris);
+    background: var(--blanco);
     border-radius: 15px;
     box-shadow: 7px 13px 37px;
+    margin: 30px;
 }
 
 .productos .box-container .box {
     padding: 5rem;
+}
+
+.productos .box-container .box .icons a {
+    font-size: 2rem;
+    color: var(--negro);
+    margin-left: 1rem;
+}
+
+.productos .box-container .box .icons a:hover {
+    color: var(--celeste);
+}
+
+.productos .box-container .box .content .precio {
+    color: var(--negro);
+    font-size: 2.5rem;
+    font-weight: bolder;
+    padding: 1rem 0;
+}
+
+.productos .box-container .box .content .precio span {
+    color: var(--celeste);
+    font-size: 1.5rem;
+    text-decoration: line-through;
+}
+
+.productos .box-container .box .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: .5rem;
+    border: .2rem solid var(--negro);
+    font-weight: bolder;
+    font-size: 1.7rem;
+    color: var(--negro);
+    cursor: pointer;
+    background: var(--blanco);
+    padding: .8rem 3rem;
+} 
+
+.productos .box-container .box .btn:hover {
+    background: var(--celeste);
+    color: var(--blanco);
+}
+
+.productos .box-container .box .stars {
+    padding-bottom: 1rem;
+} 
+
+.productos .box-container .box .stars i {
+    font-size: 1.7rem;
+    color: var(--naranja);
 }
