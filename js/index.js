@@ -1,4 +1,8 @@
+//Bienvenida al proyecto
 
+var nombre;
+nombre = prompt("Ingrese su nombre");
+alert("Hola " + nombre + " ,bienvenido a mi proyecto Ecommerce");
 
 //Ajuste del menú para celulares
 
