@@ -27,6 +27,8 @@ html {
     scroll-behavior: smooth;
 }
 
+/*Menú*/
+
 header {
     position: fixed;
     top: 0;
@@ -78,6 +80,116 @@ header .icons button i:hover {
     border-radius: .3rem;
     cursor: pointer;
     display: none;
+}
+
+.dropdown {
+    position: relative;
+    margin-left: 47rem;
+    margin-top: -2rem;
+}
+
+.dropdown ul {
+    position: absolute;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 1s;
+    list-style-type: none;
+}
+
+.dropdown ul li {
+    width: 100%;
+    background: var(--blanco);
+    color: var(--negro);
+}
+
+.dropdown ul li:hover {
+    color: var(--celeste);
+}
+
+.dropdown:hover ul,
+.dropdown ul.show {
+    max-height: 400px;
+} 
+
+
+/*Sección de productos*/
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 15%;
+    margin-left: 2%;
+}
+
+.productos .box-container {
+    width: 30%;
+    background: var(--blanco);
+    border-radius: 15px;
+    box-shadow: 7px 13px 37px;
+    margin: 30px;
+}
+
+.productos .box-container .box {
+    padding: 5rem;
+}
+
+.productos .box-container .box .icons a {
+    font-size: 2rem;
+    color: var(--negro);
+    margin-left: 1rem;
+}
+
+.productos .box-container .box .icons a:hover {
+    color: var(--celeste);
+}
+
+.productos .box-container .box .content .precio {
+    color: var(--negro);
+    font-size: 2.5rem;
+    font-weight: bolder;
+    padding: 1rem 0;
+}
+
+.productos .box-container .box .content .precio span {
+    color: var(--celeste);
+    font-size: 1.5rem;
+    text-decoration: line-through;
+}
+
+.productos .box-container .box .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: .5rem;
+    border: .2rem solid var(--negro);
+    font-weight: bolder;
+    font-size: 1.7rem;
+    color: var(--negro);
+    cursor: pointer;
+    background: var(--blanco);
+    padding: .8rem 3rem;
+} 
+
+.productos .box-container .box .btn:hover {
+    background: var(--celeste);
+    color: var(--blanco);
+}
+
+.productos .box-container .box .stars {
+    padding-bottom: 1rem;
+} 
+
+.productos .box-container .box .stars i {
+    font-size: 1.7rem;
+    color: var(--naranja);
+}
+
+/*Filtro de las páginas*/
+
+.filtro {
+    position: relative;
+    margin-top: -140rem;
 }
 
 .wrapper{
@@ -149,75 +261,4 @@ header .icons button i:hover {
     font-size: 20px;
     color: var(--celeste);
     cursor: pointer;
-}
-
-.productos {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-top: 15%;
-    margin-left: 2%;
-}
-
-.productos .box-container {
-    width: 30%;
-    background: var(--blanco);
-    border-radius: 15px;
-    box-shadow: 7px 13px 37px;
-    margin: 30px;
-}
-
-.productos .box-container .box {
-    padding: 5rem;
-}
-
-.productos .box-container .box .icons a {
-    font-size: 2rem;
-    color: var(--negro);
-    margin-left: 1rem;
-}
-
-.productos .box-container .box .icons a:hover {
-    color: var(--celeste);
-}
-
-.productos .box-container .box .content .precio {
-    color: var(--negro);
-    font-size: 2.5rem;
-    font-weight: bolder;
-    padding: 1rem 0;
-}
-
-.productos .box-container .box .content .precio span {
-    color: var(--celeste);
-    font-size: 1.5rem;
-    text-decoration: line-through;
-}
-
-.productos .box-container .box .btn {
-    display: inline-block;
-    margin-top: 1rem;
-    border-radius: .5rem;
-    border: .2rem solid var(--negro);
-    font-weight: bolder;
-    font-size: 1.7rem;
-    color: var(--negro);
-    cursor: pointer;
-    background: var(--blanco);
-    padding: .8rem 3rem;
-} 
-
-.productos .box-container .box .btn:hover {
-    background: var(--celeste);
-    color: var(--blanco);
-}
-
-.productos .box-container .box .stars {
-    padding-bottom: 1rem;
-} 
-
-.productos .box-container .box .stars i {
-    font-size: 1.7rem;
-    color: var(--naranja);
 }

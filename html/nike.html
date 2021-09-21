@@ -22,20 +22,17 @@
             <a href="#productos">Productos</a>
             <a href="#destacados">Destacados</a>
             <a href="#reviews">Reviews</a>
-        </nav>
-
-        <div class="wrapper">
-            <form class="search-input">
-                <input type="text" placeholder="¿Que desea buscar?">
-                <div class="autocom-box">
-                    <li><a href="./camiseta.html">Camisetas de futbol</a></li>
-                    <li><a href="./nike.html">Zapatillas Nike</a></li>
-                    <li><a href="./adidas.html">Zapatillas Adidas</a></li>
-                    <li><a href="./pelotas.html">Pelotas de futbol</a></li>
+            <a href="#">Productos</a>
+                <div class="dropdown">
+                    <i class="fas fa-caret-down"></i>
+                    <ul>
+                        <li><a href="../html/adidas.html">Zapatillas Adidas</a></li>
+                        <li><a href="../html/camiseta.html">Camisetas deportivas</a></li>
+                        <li><a href="../html/nike.html">Zapatillas Nike</a></li>
+                        <li><a href="../html/pelotas.html">Pelotas deportivas</a></li>
+                    </ul>
                 </div>
-                <button class="icon"><i class="fas fa-search"></i></button>
-            </form>
-        </div>
+        </nav>
 
         <div class="icons">
             <button><i class="fas fa-heart"></i></button>
@@ -134,6 +131,23 @@
                 </div>
             </div>
         </div>
+    </section>
+
+    <section class="filtro">
+        <aside>
+            <div class="wrapper">
+                <form class="search-input">
+                    <input type="text" placeholder="¿Que desea buscar?">
+                    <div class="autocom-box">
+                        <li>Camisetas de futbol</li>
+                        <li>Zapatillas Nike</li>
+                        <li>Zapatillas Adidas</li>
+                        <li>Pelotas de futbol</li>
+                    </div>
+                    <button class="icon"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </aside>
     </section>
 
     <script src="../js/general.js"></script>

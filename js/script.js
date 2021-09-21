@@ -13,6 +13,12 @@ window.onscroll = () => {
     menu.classList.remove('active'); 
 }
 
+//Ajustes del dropdown
+
+document.querySelector(".dropdown").addEventListener("click",function() {
+    document.querySelector(".dropdown ul").classList.add("show");
+  })  
+
 // obteniendo todos los elementos requeridos
 const searchWrapper = document.querySelector(".search-input");
 const inputBox = searchWrapper.querySelector("input");
