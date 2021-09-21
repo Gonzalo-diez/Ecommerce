@@ -1,3 +1,4 @@
+//Archivo JavaScript para páginas generales
 //Ajuste del menú para celulares
 
 let menu = document.querySelector('#menu-bar');
