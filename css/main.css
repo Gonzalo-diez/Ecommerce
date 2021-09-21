@@ -63,6 +63,8 @@ section {
     color: var(--blanco);
 }
 
+/*Menú*/
+
 header {
     position: relative;
     top: 0;
@@ -118,8 +120,16 @@ header .icons button i:hover {
 
 .dropdown {
     position: relative;
-    margin-left: 47rem;
-    margin-top: -2rem;
+    margin-left: 36.5rem;
+    margin-top: -2.5rem;
+}
+
+.dropdown i {
+    font-size: 2.5rem;
+}
+
+.dropdown i:hover {
+    color: var(--celeste);
 }
 
 .dropdown ul {
