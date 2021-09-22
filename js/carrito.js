@@ -70,7 +70,7 @@ function renderizarProductos() {
         miNodoPrecio.textContent = info.precio + '$';
         // Boton 
         const miNodoBoton = document.createElement('button');
-        miNodoBoton.classList.add('btn', 'btn-principal');
+        miNodoBoton.classList.add('btn');
         miNodoBoton.textContent = '+';
         miNodoBoton.setAttribute('marcador', info.Id);
         miNodoBoton.addEventListener('click', anyadirProductoAlCarrito);
@@ -123,7 +123,7 @@ function renderizarCarrito() {
         miNodo.textContent = `${numeroUnidadesItem} x ${miItem[0].producto} - ${miItem[0].precio}$`;
         // Boton de borrar
         const miBoton = document.createElement('button');
-        miBoton.classList.add('btn', 'btn-vaciar');
+        miBoton.classList.add('btn');
         miBoton.textContent = 'X';
         miBoton.style.marginLeft = '1rem';
         miBoton.dataset.item = item;
