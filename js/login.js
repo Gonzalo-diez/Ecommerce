@@ -10,3 +10,12 @@ function validar() {
         alert("Fracaso el inicio de sesión");
     }
 }
+
+const signUp = e => {
+    let formData = {
+        usuario: document.getElementById('usuario'),
+        contraseña: document.getElementById('password'),
+    }
+    localStorage.setItem('formData', JSON.stringify(formData));
+    console.log(localStorage.getItem('formData'))
+}
