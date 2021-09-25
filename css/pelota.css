@@ -5,6 +5,7 @@
     --blanco: #fff;
     --negro: #000;
     --naranja: #FA9006;
+    --gris: #d2e4e7;
 }
 
 * {
@@ -26,33 +27,10 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-}
-
-.btn {
-    display: inline-block;
-    margin-top: 1rem;
-    border-radius: .5rem;
-    border: .2rem solid var(--negro);
-    font-weight: bolder;
-    font-size: 1.7rem;
-    color: var(--negro);
-    cursor: pointer;
-    background: var(--blanco);
-    padding: .8rem 3rem;
-}
-
-.btn:hover {
-    background: var(--celeste);
-    color: var(--blanco);
-}
-
 /*Menú*/
 
 header {
-    position: relative;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -151,71 +129,158 @@ header .icons button a:hover {
     max-height: 400px;
 } 
 
-/*Formulario de login*/
-.box {
-    width: 300px;
-    padding: 30px;
-    margin-top: 20rem;
-    margin-left: 70rem;
-    transform: translate(-50%, -50%);
+
+/*Sección de productos*/
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 15%;
+    margin-left: 2%;
+}
+
+.productos .box-container {
+    width: 30%;
     background: var(--blanco);
-    text-align: center;
+    border-radius: 15px;
+    box-shadow: 7px 13px 37px;
+    margin: 30px;
 }
 
-.box h1 {
+.productos .box-container .box {
+    padding: 5rem;
+}
+
+.productos .box-container .box .icons a {
+    font-size: 2rem;
     color: var(--negro);
-    text-transform: uppercase;
-    font-weight: 700;
+    margin-left: 1rem;
 }
 
-.box input[type= "text"],
-.box input[type= "password"] {
-    background: none;
-    display: block;
-    margin: 20px auto;
-    text-align: center;
-    border: 3px solid var(--negro);
-    padding: 14px 10px;
-    width: 220px;
-    outline: none;
+.productos .box-container .box .icons a:hover {
+    color: var(--celeste);
+}
+
+.productos .box-container .box .content .precio {
     color: var(--negro);
-    border-radius: 24px;
-    transition: 0.25px;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    padding: 1rem 0;
 }
 
-.box input[type= "text"]:focus,
-.box input[type= "password"]:focus {
-    width: 270px;
-    border-color: var(--naranja);
+.productos .box-container .box .content .precio span {
+    color: var(--celeste);
+    font-size: 1.5rem;
+    text-decoration: line-through;
 }
 
-.box input[type= "submit"] {
-    background: none;
-    display: block;
-    margin: 20px auto;
-    text-align: center;
-    border: 3px solid var(--naranja);
-    padding: 14px 10px;
-    outline: none;
-    color: var(--naranja);
-    border-radius: 24px;
-    transition: 0.25px;
+.productos .box-container .box .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: .5rem;
+    border: .2rem solid var(--negro);
+    font-weight: bolder;
+    font-size: 1.7rem;
+    color: var(--negro);
     cursor: pointer;
-}
+    background: var(--blanco);
+    padding: .8rem 3rem;
+} 
 
-.box input[type= "submit"]:hover {
-    background: var(--naranja);
+.productos .box-container .box .btn:hover {
+    background: var(--celeste);
     color: var(--blanco);
 }
 
-.box p {
-    font-size: 1.5rem;
-    color: var(--negro);
-}
+.productos .box-container .box .stars {
+    padding-bottom: 1rem;
+} 
 
-.box p a {
+.productos .box-container .box .stars i {
+    font-size: 1.7rem;
     color: var(--naranja);
 }
+
+/*Filtro de las páginas*/
+
+.filtro {
+    position: relative;
+    margin-top: -140rem;
+}
+
+.wrapper{
+    max-width: 450px;
+    margin: 25px auto;
+}
+.wrapper .search-input{
+    background: var(--blanco);
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
+}
+.search-input input{
+    height: 55px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 0 60px 0 20px;
+    font-size: 18px;
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+}
+.search-input.active input{
+    border-radius: 5px 5px 0 0;
+}
+.search-input .autocom-box{
+    width: 100%;
+    background: var(--blanco);
+    position: absolute;
+    padding: 0;
+    opacity: 0;
+    pointer-events: none;
+    max-height: 280px;
+    overflow-y: auto;
+}
+.search-input.active .autocom-box{
+    padding: 10px 8px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.autocom-box {
+    z-index: 50000;
+}
+
+.autocom-box li{
+    list-style: none;
+    padding: 8px 12px;
+    display: none;
+    width: 100%;
+    cursor: default;
+    border-radius: 3px;
+}
+.search-input.active .autocom-box li{
+    display: block;
+}
+.autocom-box li:hover{
+    background: #efefef;
+}
+.search-input .icon{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    line-height: 55px;
+    font-size: 20px;
+    color: var(--celeste);
+    cursor: pointer;
+}
+
 /*Media queries*/
 
 @media (max-width:991px) {
@@ -261,11 +326,6 @@ header .icons button a:hover {
         text-align: center;
     }
 
-    .box {
-        margin-left: 350px;
-    }
-
-
 }
 
 @media (max-width:400px) {
@@ -273,7 +333,19 @@ header .icons button a:hover {
         font-size: 50%;
     }
 
-    .box {
-        margin-left: 150px;
+    .productos {
+        margin-top: 30rem;
+    }
+
+    .productos .box-container {
+        width: 300px;
+    }
+
+    .productos .box-container img {
+        width: 25rem;
+    }
+
+    .filtro {
+        top: -115rem;
     }
 }

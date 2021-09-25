@@ -251,10 +251,18 @@ header .icons button a:hover {
         text-align: center;
     }
 
+    .box {
+        margin-left: 350px;
+    }
+
 }
 
 @media (max-width:400px) {
     html {
         font-size: 50%;
+    }
+
+    .box {
+        margin-left: 150px;
     }
 }

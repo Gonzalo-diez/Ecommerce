@@ -203,11 +203,15 @@ header .icons button a:hover {
     color: var(--naranja);
 }
 
+.productos .box-container img {
+    width: 30rem;
+}
+
 /*Filtro de las páginas*/
 
 .filtro {
     position: relative;
-    margin-top: -140rem;
+    margin-top: -110rem;
 }
 
 .wrapper{
@@ -331,5 +335,21 @@ header .icons button a:hover {
 @media (max-width:400px) {
     html {
         font-size: 50%;
+    }
+
+    .productos {
+        margin-top: 30rem;
+    }
+
+    .productos .box-container {
+        width: 300px;
+    }
+
+    .productos .box-container img {
+        width: 25rem;
+    }
+
+    .filtro {
+        top: -105rem;
     }
 }
