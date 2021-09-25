@@ -72,6 +72,16 @@ header .icons button i:hover {
     color: var(--celeste);
 }
 
+header .icons button a {
+    font-size: 2.5rem;
+    color: var(--negro);
+    margin-left: 1rem;
+}
+
+header .icons button a:hover {
+    color: var(--celeste);
+}
+
 #menu-bar {
     font-size: 2.5rem;
     padding: .5rem 1.5rem;
