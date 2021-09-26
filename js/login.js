@@ -30,7 +30,7 @@ function validar() {
     }
 }
 
-const signUp = e => {
+const signUp = (e) => {
     let formData = {
         usuario: document.getElementById('usuario'),
         contraseña: document.getElementById('password'),

@@ -17,7 +17,7 @@ window.onscroll = () => {
     menu.classList.remove('active'); 
 }
 
-const signUp = e => {
+const signUp = (e) => {
     let formData = {
         nombre: document.getElementById('nombre').value,
         apellido: document.getElementById('apellido').value,
