@@ -1,4 +1,7 @@
-//Archivo JavaScript para páginas generales
+document.querySelector(".dropdown").addEventListener("click",function() {
+  document.querySelector(".dropdown ul").classList.add("show");
+})
+
 //Ajuste del menú para celulares
 
 let menu = document.querySelector('#menu-bar');
@@ -14,11 +17,6 @@ window.onscroll = () => {
     menu.classList.remove('active'); 
 }
 
-//Ajustes del dropdown
-
-document.querySelector(".dropdown").addEventListener("click",function() {
-    document.querySelector(".dropdown ul").classList.add("show");
-  })  
 
 // obteniendo todos los elementos requeridos
 const searchWrapper = document.querySelector(".search-input");
