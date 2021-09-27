@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecommerce</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="../css/zapatillas.css">
+    <link rel="stylesheet" href="../css/zapatillas2.css">
 </head>
 <body>
     <!--Menú-->
@@ -40,6 +40,8 @@
         </div>
 
     </header>
+
+    <!--Sección de productos-->
 
     <section class="productos" id="productos">
         <div class="box-container">
@@ -132,6 +134,31 @@
         </div>
     </section>
 
+    <!--Carrito de compras-->
+
+    <section class="carrito">
+
+        <div class="container">
+            <div class="row">
+                <!-- Elementos generados a partir del JSON -->
+                <main id="items" class="lista"></main>
+                <!-- Carrito -->
+                <aside>
+                    <h2>Carrito</h2>
+                    <!-- Elementos del carrito -->
+                    <ul id="carrito" class="list-group"></ul>
+                    <hr>
+                    <!-- Precio total -->
+                    <p class="texto">Total: <span id="total"></span>$;</p>
+                    <button id="boton-vaciar" class="btnX">Vaciar</button>
+                </aside>
+            </div>
+        </div>
+
+    </section>
+
+    <!--Barra de búsqueda-->
+
     <section class="filtro">
         <aside>
             <div class="wrapper">
@@ -149,7 +176,10 @@
         </aside>
     </section>
 
+
+    <!--Script JS-->
     <script src="../js/general.js"></script>
     <script src="../js/script.js"></script>
+    <script src="../js/carrito3.js"></script>
 </body>
 </html>

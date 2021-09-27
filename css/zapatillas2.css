@@ -211,7 +211,7 @@ header .icons button a:hover {
 
 .filtro {
     position: relative;
-    margin-top: -182rem;
+    margin-top: -180rem;
 }
 
 .wrapper{
@@ -309,7 +309,7 @@ header .icons button a:hover {
 }
 
 .carrito .card-title {
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .carrito .card-text {

@@ -211,7 +211,7 @@ header .icons button a:hover {
 
 .filtro {
     position: relative;
-    margin-top: -165rem;
+    margin-top: -275rem;
 }
 
 .wrapper{
@@ -285,6 +285,47 @@ header .icons button a:hover {
     cursor: pointer;
 }
 
+/*Carrito*/
+
+.carrito img {
+    width: 15%;
+}
+
+.carrito div {
+    width: 100%;
+    background: var(--blanco);
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.carrito .card-body {
+    border: .1rem solid rgba(0, 0, 0, 1);
+    border-radius: .5rem;
+}
+
+.carrito .card-title {
+    font-size: 2rem;
+}
+
+.carrito .card-text {
+    font-size: 2rem;
+}
+
+.carrito .btn {
+    width: 10%;
+    height: 50%;
+}
+
+.carrito .btnX {
+    border: .1rem solid rgba(0, 0, 0, 1);
+    border-radius: .5rem;
+    width: 10rem;
+}
+
 /*Media queries*/
 
 @media (max-width:991px) {
@@ -330,6 +371,25 @@ header .icons button a:hover {
         text-align: center;
     }
 
+}
+
+
+@media (max-width:425px) {
+    .productos {
+        margin-top: 20rem;
+    }
+
+    .productos .box-container {
+        width: 300px;
+    }
+
+    .productos .box-container img {
+        width: 25rem;
+    }
+
+    .filtro {
+        top: -125rem;
+    }
 }
 
 @media (max-width:400px) {
