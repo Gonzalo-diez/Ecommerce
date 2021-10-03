@@ -18,8 +18,8 @@ window.onscroll = () => {
 }
 
 function validar() {
-    var username = document.getElementById('usuario').value;
-    var password = document.getElementById('password').value;
+    var username = $('#usuario').value;
+    var password = $('#password').value;
 
     if (username == "gonzalo" && password == "10") {
         alert("Inicio de sesión exitoso");
@@ -32,8 +32,8 @@ function validar() {
 
 const signUp = (e) => {
     let formData = {
-        usuario: document.getElementById('usuario'),
-        contraseña: document.getElementById('password'),
+        usuario: $('#usuario'),
+        contraseña: $('#password'),
     }
     localStorage.setItem('formData', JSON.stringify(formData));
     console.log(localStorage.getItem('formData'))
