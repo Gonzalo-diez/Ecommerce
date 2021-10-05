@@ -1,3 +1,9 @@
+//Ajustes del dropdown
+
+document.querySelector(".dropdown").addEventListener("click",function() {
+    document.querySelector(".dropdown ul").classList.add("show");
+})
+  
 //Ajuste del menú para celulares
   
 let menu = document.querySelector('#menu-bar');
