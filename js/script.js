@@ -17,7 +17,7 @@ window.onscroll = () => {
     menu.classList.remove('active'); 
 }
 
-
+// barra de búsqueda
 // obteniendo todos los elementos requeridos
 const searchWrapper = document.querySelector(".search-input");
 const inputBox = searchWrapper.querySelector("input");
