@@ -66,34 +66,3 @@ document.querySelectorAll('.imagen-destacada-3').forEach(image_3 =>{
   });
 });  
 
-
-class mercancia {
-  constructor(producto, cantidad, precio){
-    this.producto = producto;
-    this.cantidad = cantidad;
-    this.precio = precio;
-  }
-}
-let mercancia1 = new mercancia ("Nike rojas", 50, "$16000");
-console.log(mercancia1);
-let mercancia2 = new mercancia ("Nike azules", 7, "$16000");
-console.log(mercancia2);
-let mercancia3 = new mercancia ("Nike amarillas", 40, "$16000");
-console.log(mercancia3)
-
-const mercancias = [{id: 1, producto: "Nike rojas", cantidad: 50, precio: "$16000"},
-                   {id: 2, producto: "Nike azules", cantidad: 7, precio: "$15000"},
-                   {id: 3, producto: "Nike amarillas", cantidad: 40, precio: "$14500"}];
-
-for(const mercancia of mercancias) {
-  console.log(mercancia.id)
-  console.log(mercancia.producto)
-  console.log(mercancia.cantidad)
-  console.log(mercancia.precio)
-};
-
-const producto1 = {id: 3, producto: "Nike amarillas", cantidad: 40, precio: "$14500"};
-const array = [producto1, {id:2, producto: "Nike azules", cantidad: 7, precio: "$15000"}];
-array.push = ({id:1, producto: "Nike rojas", cantidad: 50, precio: "$16000"});
-
-console.log(array);
