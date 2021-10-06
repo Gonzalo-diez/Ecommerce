@@ -186,7 +186,7 @@ DOMbotonVaciar.addEventListener('click', vaciarCarrito);
 renderizarProductos();
 
 // Ajax
-const URLJSON = "/json/inventario.json"
+const URLJSON = "./json/inventario.json"
 
 $("#carrito").click(function() {
     $.getJSON(URLJSON, function(respuesta, estado) {
