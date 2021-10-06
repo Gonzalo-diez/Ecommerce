@@ -186,8 +186,15 @@ DOMbotonVaciar.addEventListener('click', vaciarCarrito);
 renderizarProductos();
 
 // Ajax
-$(function() {
-    $.get("../json/inventario.json", function(data) {
-        console.log(data)
+const URLJSON = "../json/inventario.json"
+
+$("#carrito").click(function() {
+    $.getJSON(URLJSON, function(respuesta, estado) {
+        if(estado === "success") {
+            let inventario = respuesta;
+            for(const dato of inventario) {
+                alert(dato.producto)
+            }
+        }
     });
 });
