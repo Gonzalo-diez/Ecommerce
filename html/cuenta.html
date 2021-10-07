@@ -41,7 +41,54 @@
 
     </header>
 
+    <!--Seccion de bienvenida del usuario-->
+
+    <section class="inicio">
+
+        <h1>Bienvenido Usuario</h1>
+        <p>Su carrito de compras:</p>
+
+    </section>
+
+    <!--Carrito de compras-->
+
+    <section class="carrito">
+
+        <div class="container">
+            <div class="row">
+                <!-- Elementos generados a partir del JSON -->
+                <main id="items" class="lista"></main>
+                <!-- Carrito -->
+                <aside>
+                    <h2>Carrito</h2>
+                    <!-- Elementos del carrito -->
+                    <ul id="carrito" class="list-group"></ul>
+                    <hr>
+                    <!-- Precio total -->
+                    <p class="texto">Total: <span id="total"></span>$;</p>
+                    <button id="boton-vaciar" class="btnX">Vaciar</button>
+                </aside>
+            </div>
+        </div>
+
+    </section>
+
+    <!--Seccion de novedades-->
+
+    <section class="novedades">
+
+        <div class="box">
+            <h2>Las ultimas novedades</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde eos excepturi, sed consequatur perspiciatis molestias, maiores reprehenderit aliquid rem pariatur alias tempore magni! Eius consectetur earum, nihil iusto cumque cum, tempore incidunt doloremque modi dolor quis rem consequuntur temporibus laborum beatae deleniti reiciendis atque dolore eaque hic? Commodi, minima quo.</p>
+            <img src="../img/product-6.png" alt="Zapatillas Nike">
+            <img src="../img/adidas3.png" alt="Zapatillas Adidas">
+            <img src="../img/product-3.png" alt="">
+        </div>
+
+    </section>
+
     <!--Script JS-->
     <script src="../js/cuenta.js"></script>
+    <script src="../js/carritocuenta.js"></script>
 </body>
 </html>

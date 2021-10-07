@@ -1,6 +1,6 @@
 //Ajustes del dropdown
 
-document.querySelector(".dropdown").addEventListener("click",function() {
+document.querySelector(".dropdown").click(function() {
     document.querySelector(".dropdown ul").classList.add("show");
 })
   
@@ -17,7 +17,7 @@ menu.onclick = () => {
 window.onscroll = () => {
     menu.classList.remove('fa-times');
     menu.classList.remove('active'); 
-}
+  }
 
 function validar() {
     var username = $('#usuario').value;
