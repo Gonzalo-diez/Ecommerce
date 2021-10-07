@@ -18,3 +18,18 @@ window.onscroll = () => {
     menu.classList.remove('fa-times');
     menu.classList.remove('active'); 
 }
+
+//Animaciones
+$(document).ready(function() {
+  $("#saludo").click(function() {
+    $("#usuario").toggle(2500);
+  });
+});
+
+$(document).ready(function() {
+  $("#animar").click(function() {
+    $("#caja").slideUp(2500);
+    $("#caja").slideDown(5000);
+    $("#caja").delay();
+  });
+});
