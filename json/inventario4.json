@@ -1,0 +1,24 @@
+[{
+    "Id": 0,
+    "producto": "Camiseta de Argentina $15000",
+    "Cantidad": 50,
+    "precio": 15000
+},
+{
+    "Id": 1,
+    "producto": "Camiseta de Boca Jr $15000",
+    "Cantidad": 75,
+    "precio": 15000
+},
+{
+    "Id": 2,
+    "producto": "Camiseta de Paris Saint Germain $15000",
+    "Cantidad": 75,
+    "precio": 15000
+},
+{
+    "Id": 3,
+    "producto": "Camiseta de River Plate $15000",
+    "Cantidad": 75,
+    "precio": 15000
+}]

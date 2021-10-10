@@ -170,3 +170,17 @@ DOMbotonVaciar.addEventListener('click', vaciarCarrito);
 
 // Inicio
 renderizarProductos();
+
+// Ajax
+const URLJSON = "../json/inventario3.json"
+
+$("#carrito").click(function() {
+    $.getJSON(URLJSON, function(respuesta, estado) {
+        if(estado === "success") {
+            let inventario = respuesta;
+            for(const dato of inventario) {
+                alert(dato.producto)
+            }
+        }
+    });
+});

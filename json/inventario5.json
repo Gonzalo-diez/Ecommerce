@@ -1,0 +1,24 @@
+[{
+    "Id": 0,
+    "producto": "Pelota de Futbol $15000",
+    "Cantidad": 50,
+    "precio": 15000
+},
+{
+    "Id": 1,
+    "producto": "Pelota de Futbol $15000",
+    "Cantidad": 75,
+    "precio": 15000
+},
+{
+    "Id": 2,
+    "producto": "Pelota de Futbol $15000",
+    "Cantidad": 75,
+    "precio": 15000
+},
+{
+    "Id": 3,
+    "producto": "Pelota de Fubol $15000",
+    "Cantidad": 75,
+    "precio": 15000
+}]
