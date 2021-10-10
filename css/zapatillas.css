@@ -372,6 +372,11 @@ header .icons button a:hover {
         text-align: center;
     }
 
+    header .navbar .dropdown {
+        margin-left: 25rem;
+        margin-top: -6rem;
+    }
+
 }
 
 @media (max-width:425px) {
@@ -410,6 +415,6 @@ header .icons button a:hover {
     }
 
     .filtro {
-        top: -105rem;
+        top: -135rem;
     }
 }

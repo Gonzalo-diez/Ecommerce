@@ -677,6 +677,11 @@ header .icons button a:hover {
         text-align: center;
     }
 
+    header .navbar .dropdown {
+        margin-left: 25rem;
+        margin-top: -6rem;
+    }
+
     .inicio .slide-container .slide .image .text {
         width: 60%;
     }

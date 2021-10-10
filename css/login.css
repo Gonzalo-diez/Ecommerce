@@ -261,6 +261,11 @@ header .icons button a:hover {
         text-align: center;
     }
 
+    header .navbar .dropdown {
+        margin-left: 25rem;
+        margin-top: -6rem;
+    }
+
     .box {
         margin-left: 350px;
     }
