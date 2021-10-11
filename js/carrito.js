@@ -127,7 +127,7 @@ function renderizarCarrito() {
         miBoton.textContent = 'X';
         miBoton.style.marginLeft = '1rem';
         miBoton.dataset.item = item;
-        miBoton.click(borrarItemCarrito());
+        miBoton.addEventListener("click","borrarItemCarrito");
         // Mezclamos nodos
         miNodo.appendChild(miBoton);
         DOMcarrito.appendChild(miNodo);
