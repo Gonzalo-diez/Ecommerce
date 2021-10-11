@@ -87,7 +87,7 @@ function anyadirProductoAlCarrito(evento) {
     // Generamos los Nodos a partir de carrito
     carritoSinDuplicados.forEach((item) => {
         // Obtenemos el item que necesitamos de la variable base de datos
-        const miItem = baseDeDatos.filter((itemBaseDatos) => {
+        const miItem = baseDatos.filter((itemBaseDatos) => {
             // ¿Coincide las id? Solo puede existir un caso
             return itemBaseDatos.id === parseInt(item);
         });
@@ -98,8 +98,8 @@ function anyadirProductoAlCarrito(evento) {
         }, 0);
         // Creamos el nodo del item del carrito
         const miNodo = document.createElement('li');
-        miNodo.classList.add('list-group-item', 'text-right', 'mx-2');
-        miNodo.textContent = `${numeroUnidadesItem} x ${miItem[0].nombre} - ${miItem[0].precio}€`;
+        miNodo.classList.add('list');
+        miNodo.textContent = `${numeroUnidadesItem} x ${miItem[0].producto} - ${miItem[0].precio}$`;
         // Boton de borrar
         const miBoton = document.createElement('button');
         miBoton.classList.add('btn');
