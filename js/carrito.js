@@ -100,7 +100,7 @@ function anyadirProductoAlCarrito(evento) {
 /**
  * Dibuja todos los productos guardados en el carrito
  */
-function renderizarCarrito() {
+ function renderizarCarrito() {
     // Vaciamos todo el html
     DOMcarrito.textContent = '';
     // Quitamos los duplicados
@@ -108,9 +108,9 @@ function renderizarCarrito() {
     // Generamos los Nodos a partir de carrito
     carritoSinDuplicados.forEach((item) => {
         // Obtenemos el item que necesitamos de la variable base de datos
-        const miItem = baseDatos.filter((itemBaseDatos) => {
+        const miItem = baseDeDatos.filter((itemBaseDatos) => {
             // ¿Coincide las id? Solo puede existir un caso
-            return itemBaseDatos.Id === parseInt(item);
+            return itemBaseDatos.id === parseInt(item);
         });
         // Cuenta el número de veces que se repite el producto
         const numeroUnidadesItem = carrito.reduce((total, itemId) => {
@@ -119,15 +119,15 @@ function renderizarCarrito() {
         }, 0);
         // Creamos el nodo del item del carrito
         const miNodo = document.createElement('li');
-        miNodo.classList.add('list-group-item', 'texto');
-        miNodo.textContent = `${numeroUnidadesItem} x ${miItem[0].producto} - ${miItem[0].precio}$`;
+        miNodo.classList.add('list-group-item', 'text-right', 'mx-2');
+        miNodo.textContent = `${numeroUnidadesItem} x ${miItem[0].nombre} - ${miItem[0].precio}€`;
         // Boton de borrar
         const miBoton = document.createElement('button');
         miBoton.classList.add('btn');
         miBoton.textContent = 'X';
         miBoton.style.marginLeft = '1rem';
         miBoton.dataset.item = item;
-        miBoton.addEventListener("click",borrarItemCarrito);
+        miBoton.addEventListener('click', borrarItemCarrito);
         // Mezclamos nodos
         miNodo.appendChild(miBoton);
         DOMcarrito.appendChild(miNodo);
