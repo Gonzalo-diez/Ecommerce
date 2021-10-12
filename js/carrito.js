@@ -100,7 +100,7 @@ function anyadirProductoAlCarrito(evento) {
 /**
  * Dibuja todos los productos guardados en el carrito
  */
- function renderizarCarrito() {
+function renderizarCarrito() {
     // Vaciamos todo el html
     DOMcarrito.textContent = '';
     // Quitamos los duplicados
@@ -110,7 +110,7 @@ function anyadirProductoAlCarrito(evento) {
         // Obtenemos el item que necesitamos de la variable base de datos
         const miItem = baseDatos.filter((itemBaseDatos) => {
             // ¿Coincide las id? Solo puede existir un caso
-            return itemBaseDatos.id === parseInt(item);
+            return itemBaseDatos.Id === parseInt(item);
         });
         // Cuenta el número de veces que se repite el producto
         const numeroUnidadesItem = carrito.reduce((total, itemId) => {
@@ -119,7 +119,7 @@ function anyadirProductoAlCarrito(evento) {
         }, 0);
         // Creamos el nodo del item del carrito
         const miNodo = document.createElement('li');
-        miNodo.classList.add('list');
+        miNodo.classList.add('borrar');
         miNodo.textContent = `${numeroUnidadesItem} x ${miItem[0].producto} - ${miItem[0].precio}$`;
         // Boton de borrar
         const miBoton = document.createElement('button');
