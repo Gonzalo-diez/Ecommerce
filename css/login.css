@@ -270,6 +270,17 @@ header .icons button a:hover {
         margin-left: 350px;
     }
 
+    header .navbar .dropdown .pags {
+        display: none;
+    }
+
+    header .navbar .dropdown .pags.active {
+        display: block;
+    }
+
+    header .navbar .dropdown .pags li {
+        overflow: visible;
+    }
 
 }
 
@@ -277,6 +288,7 @@ header .icons button a:hover {
     .box {
         margin-left: 180px;
     }
+
 }
 
 @media (max-width:400px) {
@@ -287,4 +299,13 @@ header .icons button a:hover {
     .box {
         margin-left: 150px;
     }
+
+}
+
+@media (max-width:375px) {
+    header .navbar .dropdown {
+        margin-left: 29rem;
+        margin-top: -6rem;
+    }
+    
 }

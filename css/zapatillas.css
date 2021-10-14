@@ -341,6 +341,7 @@ header .icons button a:hover {
     section {
         padding: 2rem
     }
+
 }
 
 @media (max-width:768px) {
@@ -377,6 +378,18 @@ header .icons button a:hover {
         margin-top: -6rem;
     }
 
+    header .navbar .dropdown .pags {
+        display: none;
+    }
+
+    header .navbar .dropdown .pags.active {
+        display: block;
+    }
+
+    header .navbar .dropdown .pags li {
+        overflow: visible;
+    }
+
 }
 
 @media (max-width:425px) {
@@ -395,6 +408,7 @@ header .icons button a:hover {
     .filtro {
         top: -94rem;
     }
+
 }
 
 @media (max-width:400px) {
@@ -417,4 +431,12 @@ header .icons button a:hover {
     .filtro {
         top: -135rem;
     }
+}
+
+@media (max-width:375px) {
+    header .navbar .dropdown {
+        margin-left: 29rem;
+        margin-top: -6rem;
+    }
+    
 }

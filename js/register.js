@@ -19,6 +19,20 @@ window.onscroll = () => {
     menu.classList.remove('active'); 
 }
 
+//Ajuste del dropdown para celulares
+let submenu = document.querySelector('#submenu');
+let pags = document.querySelector('.pags');
+
+submenu.onclick = () => {
+    submenu.classList.toggle('fa-times');
+    pags.classList.toggle('active');
+}
+
+submenu.onscroll = () => {
+    submenu.classList.remove('fa-times');
+    submenu.classList.remove('active');
+}
+
 const signUp = (e) => {
     let formData = {
         nombre: $('#nombre').value,
