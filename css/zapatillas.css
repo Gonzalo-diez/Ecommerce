@@ -319,6 +319,10 @@ header .icons button a:hover {
 .carrito .btn {
     width: 10%;
     height: 70%;
+    width: 10%;
+    height: 70%;
+    border: .1rem solid rgba(0, 0, 0, 1);
+    border-radius: .5rem;
 }
 
 .carttio .borrar .btnx {
