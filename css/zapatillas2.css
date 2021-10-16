@@ -321,10 +321,9 @@ header .icons button a:hover {
     height: 70%;
 }
 
-.carrito .btnX {
-    border: .1rem solid rgba(0, 0, 0, 1);
-    border-radius: .5rem;
-    width: 10rem;
+.carttio .borrar .btnx {
+    width: 10%;
+    height: 70%;
 }
 
 /*Media queries*/

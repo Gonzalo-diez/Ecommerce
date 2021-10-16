@@ -26,6 +26,7 @@ const DOMitems = document.querySelector('#items');
 const DOMcarrito = document.querySelector('#carrito');
 const DOMtotal = document.querySelector('#total');
 const DOMbotonVaciar = document.querySelector('#boton-vaciar');
+const miLocalStorage = window.localStorage;
 
 function renderizarProductos() {
     baseDatos.forEach((info) => {
@@ -73,13 +74,14 @@ function anyadirProductoAlCarrito(evento) {
     calcularTotal();
     // Actualizamos el carrito 
     renderizarCarrito();
-
+    // Actualizamos el LocalStorage
+    guardarCarritoEnLocalStorage();
 }
 
 /**
  * Dibuja todos los productos guardados en el carrito
  */
- function renderizarCarrito() {
+function renderizarCarrito() {
     // Vaciamos todo el html
     DOMcarrito.textContent = '';
     // Quitamos los duplicados
@@ -89,7 +91,7 @@ function anyadirProductoAlCarrito(evento) {
         // Obtenemos el item que necesitamos de la variable base de datos
         const miItem = baseDatos.filter((itemBaseDatos) => {
             // ¿Coincide las id? Solo puede existir un caso
-            return itemBaseDatos.id === parseInt(item);
+            return itemBaseDatos.Id === parseInt(item);
         });
         // Cuenta el número de veces que se repite el producto
         const numeroUnidadesItem = carrito.reduce((total, itemId) => {
@@ -98,11 +100,11 @@ function anyadirProductoAlCarrito(evento) {
         }, 0);
         // Creamos el nodo del item del carrito
         const miNodo = document.createElement('li');
-        miNodo.classList.add('list');
+        miNodo.classList.add('borrar');
         miNodo.textContent = `${numeroUnidadesItem} x ${miItem[0].producto} - ${miItem[0].precio}$`;
         // Boton de borrar
         const miBoton = document.createElement('button');
-        miBoton.classList.add('btn');
+        miBoton.classList.add('btnx');
         miBoton.textContent = 'X';
         miBoton.style.marginLeft = '1rem';
         miBoton.dataset.item = item;
@@ -127,6 +129,9 @@ function borrarItemCarrito(evento) {
     renderizarCarrito();
     // Calculamos de nuevo el precio
     calcularTotal();
+    // Actualizamos el LocalStorage
+    guardarCarritoEnLocalStorage();
+
 }
 
 /**
@@ -156,10 +161,27 @@ function vaciarCarrito() {
     // Renderizamos los cambios
     renderizarCarrito();
     calcularTotal();
+    // Borra LocalStorage
+    localStorage.clear();
+}
+
+function guardarCarritoEnLocalStorage () {
+    miLocalStorage.setItem('carrito', JSON.stringify(carrito));
+}
+
+function cargarCarritoDeLocalStorage () {
+    // ¿Existe un carrito previo guardado en LocalStorage?
+    if (miLocalStorage.getItem('carrito') !== null) {
+        // Carga la información
+        carrito = JSON.parse(miLocalStorage.getItem('carrito'));
+    }
 }
 
 // Eventos
 DOMbotonVaciar.addEventListener('click', vaciarCarrito);
 
 // Inicio
+cargarCarritoDeLocalStorage();
 renderizarProductos();
+calcularTotal();
+renderizarCarrito();
