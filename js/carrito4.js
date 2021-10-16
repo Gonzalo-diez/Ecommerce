@@ -1,27 +1,27 @@
 window.onload = function () {
     let baseDatos = [{
-        Id: 0,
+        Id: 14,
         producto: "Camiseta de Argentina",
         Cantidad: 50,
         precio: 15000,
         imagen: '../img/camiseta1.png'
     },
     {
-        Id: 1,
+        Id: 15,
         producto: "Camiseta de Boca Jr",
         Cantidad: 75,
         precio: 13000,
         imagen: '../img/camiseta2.png'
     },
     {
-        Id: 2,
+        Id: 16,
         producto: "Camiseta de Paris Saint Germain",
         Cantidad: 75,
         precio: 15000,
         imagen: '../img/camiseta3.png'
     },
     {
-        Id: 3,
+        Id: 17,
         producto: "Camiseta de River Plate",
         Cantidad: 75,
         precio: 15000,

@@ -1,27 +1,27 @@
 window.onload = function () {
     let baseDatos = [{
-        Id: 0,
+        Id: 18,
         producto: "Pelota de Futbol",
         Cantidad: 50,
         precio: 15000,
         imagen: '../img/pelota1.png'
     },
     {
-        Id: 1,
+        Id: 19,
         producto: "Pelota de futbol",
         Cantidad: 75,
         precio: 13000,
         imagen: '../img/pelota2.png'
     },
     {
-        Id: 2,
+        Id: 20,
         producto: "Pelota de Futbol",
         Cantidad: 75,
         precio: 15000,
         imagen: '../img/pelota3.png'
     },
     {
-        Id: 3,
+        Id: 21,
         producto: "Pelota de Futbol",
         Cantidad: 75,
         precio: 15000,

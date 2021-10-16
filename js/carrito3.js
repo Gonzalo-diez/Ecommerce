@@ -1,27 +1,27 @@
 window.onload = function () {
     let baseDatos = [{
-        Id: 0,
+        Id: 10,
         producto: "Zapatillas Adidas",
         Cantidad: 50,
         precio: 15000,
         imagen: '../img/adidas1.png'
     },
     {
-        Id: 1,
+        Id: 11,
         producto: "Zapatillas Adidas",
         Cantidad: 75,
         precio: 13000,
         imagen: '../img/adidas2.png'
     },
     {
-        Id: 2,
+        Id: 12,
         producto: "Zapatillas Adidas",
         Cantidad: 75,
         precio: 15000,
         imagen: '../img/adidas3.png'
     },
     {
-        Id: 3,
+        Id: 13,
         producto: "Zapatillas Adidas",
         Cantidad: 75,
         precio: 15000,
