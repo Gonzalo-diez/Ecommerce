@@ -1,39 +1,27 @@
 window.onload = function () {
     let baseDatos = [{
-        Id: 0,
-        producto: "Zapatillas Nike",
+        Id: 35,
+        producto: "Pelotas de Tenis",
         precio: 15000,
-        imagen: './img/product-1.png'
+        imagen: '../img/tenis1.png'
     },
     {
-        Id: 1,
-        producto: "Zapatillas Nike",
-        precio: 13000,
-        imagen: './img/product-2.png'
+        Id: 36,
+        producto: "Pelotas de Tenis",
+        precio: 15000,
+        imagen: '../img/tenis2.png'
     },
     {
-        Id: 2,
-        producto: "Zapatillas Nike",
-        precio: 16000,
-        imagen: './img/product-3.png'
+        Id: 37,
+        producto: "Pelotas de Tenis",
+        precio: 15000,
+        imagen: '../img/tenis3.png'
     },
     {
-        Id: 3,
-        producto: "Zapatillas Nike",
-        precio: 15800,
-        imagen: './img/product-4.png'
-    },
-    {
-        Id: 4,
-        producto: "Zapatillas Nike",
-        precio: 17000,
-        imagen: './img/product-5.png'
-    },
-    {
-        Id: 5,
-        producto: "Zapatillas Nike",
-        precio: 14500,
-        imagen: './img/product-6.png'
+        Id: 38,
+        producto: "Pelotas de Tenis",
+        precio: 15000,
+        imagen: '../img/tenis4.png'
     }]
 
     let carrito = [];
@@ -202,17 +190,3 @@ window.onload = function () {
     calcularTotal();
     renderizarCarrito();
 };
-
-// Ajax
-const URLJSON = "./json/inventario.json"
-
-$("#carrito1").click(function() {
-    $.getJSON(URLJSON, function(respuesta, estado) {
-        if(estado === "success") {
-            let inventario = respuesta;
-            for(const dato of inventario) {
-                alert(dato.producto)
-            }
-        }
-    });
-});

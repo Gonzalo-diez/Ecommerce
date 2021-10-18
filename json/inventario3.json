@@ -1,24 +1,16 @@
 [{
     "Id": 0,
-    "producto": "Zapatillas Adidas $15000",
-    "Cantidad": 50,
-    "precio": 15000
+    "producto": "Zapatillas Adidas $15000"
 },
 {
     "Id": 1,
-    "producto": "Zapatillas Adidas $15000",
-    "Cantidad": 75,
-    "precio": 15000
+    "producto": "Zapatillas Adidas $15000"
 },
 {
     "Id": 2,
-    "producto": "Zapatillas Adidas $15000",
-    "Cantidad": 75,
-    "precio": 15000
+    "producto": "Zapatillas Adidas $15000"
 },
 {
     "Id": 3,
-    "producto": "Zapatillas Adidas $15000",
-    "Cantidad": 75,
-    "precio": 15000
+    "producto": "Zapatillas Adidas $15000"
 }]

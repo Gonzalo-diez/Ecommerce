@@ -93,7 +93,6 @@ header .icons button a:hover {
 }
 
 .dropdown {
-    position: relative;
     margin-left: 36.5rem;
     margin-top: -2.5rem;
 }
@@ -106,26 +105,28 @@ header .icons button a:hover {
     color: var(--celeste);
 }
 
-.dropdown ul {
+.dropdown .pags {
     position: absolute;
     max-height: 0px;
     overflow: hidden;
     transition: all 1s;
     list-style-type: none;
+    border: .1rem var(--blanco) solid;
+    border-radius: .2rem var(--negro);
 }
 
-.dropdown ul li {
+.dropdown .pags li {
     width: 100%;
     background: var(--blanco);
     color: var(--negro);
 }
 
-.dropdown ul li:hover {
+.dropdown .pags li:hover {
     color: var(--celeste);
 }
 
-.dropdown:hover ul,
-.dropdown ul.show {
+.dropdown:hover .pags,
+.dropdown .pags.show {
     max-height: 400px;
 } 
 

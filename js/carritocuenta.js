@@ -2,21 +2,18 @@ window.onload = function () {
     let baseDatos = [{
         Id: 22,
         producto: "Zapatillas Nike",
-        Cantidad: 50,
         precio: 15000,
         imagen: '../img/product-3.png'
     },
     {
         Id: 23,
         producto: "Camiseta Argentina",
-        Cantidad: 75,
         precio: 13000,
         imagen: '../img/camiseta1.png'
     },
     {
         Id: 24,
         producto: "Pelota de Futbol",
-        Cantidad: 75,
         precio: 16000,
         imagen: '../img/pelota2.png'
     }]

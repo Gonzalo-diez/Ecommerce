@@ -93,7 +93,6 @@ header .icons button a:hover {
 }
 
 .dropdown {
-    position: relative;
     margin-left: 36.5rem;
     margin-top: -2.5rem;
 }
@@ -106,26 +105,28 @@ header .icons button a:hover {
     color: var(--celeste);
 }
 
-.dropdown ul {
+.dropdown .pags {
     position: absolute;
     max-height: 0px;
     overflow: hidden;
     transition: all 1s;
     list-style-type: none;
+    border: .1rem var(--blanco) solid;
+    border-radius: .2rem var(--negro);
 }
 
-.dropdown ul li {
+.dropdown .pags li {
     width: 100%;
     background: var(--blanco);
     color: var(--negro);
 }
 
-.dropdown ul li:hover {
+.dropdown .pags li:hover {
     color: var(--celeste);
 }
 
-.dropdown:hover ul,
-.dropdown ul.show {
+.dropdown:hover .pags,
+.dropdown .pags.show {
     max-height: 400px;
 } 
 
@@ -211,7 +212,7 @@ header .icons button a:hover {
 
 .filtro {
     position: relative;
-    margin-top: -318rem;
+    margin-top: -328rem;
 }
 
 .wrapper{
@@ -384,22 +385,27 @@ header .icons button a:hover {
     height: 70%;
 }
 
-/*Media queries*/
+/*Footer*/
 
-@media (max-width:991px) {
-    html {
-        font-size: 55%;
-    }
-
-    header {
-        padding: 2rem;
-    }
-
-    section {
-        padding: 2rem
-    }
-    
+.piePagina {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 8rem;
+    flex-wrap: wrap;
 }
+
+.piePagina button a {
+    color: var(--negro);
+    background: var(--blanco);
+    font-size: 2rem;
+}
+
+.piePagina button a:hover {
+    color: var(--celeste);
+}
+
+/*Media queries*/
 
 @media (max-width:768px) {
     #menu-bar {
@@ -431,7 +437,7 @@ header .icons button a:hover {
     }
 
     header .navbar .dropdown {
-        margin-left: 25rem;
+        margin-left: 45rem;
         margin-top: -6rem;
     }
 
@@ -447,12 +453,28 @@ header .icons button a:hover {
         overflow: visible;
     }
 
+    .productos {
+        margin-top: 20rem;
+    }
+
+    .productos .box-container {
+        width: 300px;
+    }
+
+    .productos .box-container img {
+        width: 25rem;
+    }
+
+    .filtro {
+        top: -28rem;
+    }
+
 }
 
 
 @media (max-width:425px) {
     header .navbar .dropdown {
-        margin-left: 29rem;
+        margin-left: 26.5rem;
         margin-top: -6rem;
     }
 
@@ -469,49 +491,53 @@ header .icons button a:hover {
     }
 
     .filtro {
-        top: -190rem;
+        top: -210rem;
     }
 
-}
-
-@media (max-width:400px) {
-    header .navbar .dropdown {
-        margin-top: -6rem;
-    }
-
-    html {
-        font-size: 50%;
-    }
-
-    .productos {
-        margin-top: 30rem;
-    }
-
-    .productos .box-container {
-        width: 300px;
-    }
-
-    .productos .box-container img {
-        width: 25rem;
-    }
-
-    .filtro {
-        top: -215rem;
+    .carrito .btn {
+        height: 5rem;
+        width: 5rem;
+        border: .1rem solid rgba(0, 0, 0, 1);
+        border-radius: .5rem;
     }
 
 }
 
 @media (max-width:375px) {
     header .navbar .dropdown {
-        margin-left: 29rem;
+        margin-left: 24rem;
         margin-top: -6rem;
+    }
+
+    .filtro {
+        top: -222rem;
+    }
+
+    .carrito .btn {
+        height: 5rem;
+        width: 5rem;
+        border: .1rem solid rgba(0, 0, 0, 1);
+        border-radius: .5rem;
     }
 
 }
 
 @media (max-width:320px) {
     header .navbar .dropdown {
-        margin-left: 26rem;
+        margin-left: 21rem;
         margin-top: -6rem;
+    }
+
+    .filtro {
+        top: -235rem;
+        width: 30rem;
+        margin-left: 1rem;
+    }
+
+    .carrito .btn {
+        height: 5rem;
+        width: 5rem;
+        border: .1rem solid rgba(0, 0, 0, 1);
+        border-radius: .5rem;
     }
 }

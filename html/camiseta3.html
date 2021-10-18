@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="../css/camisetas.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--Menú-->
+    <header>
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <a href="#" class="logo">Fut10Bol</a>
+
+        <nav class="navbar">
+            <a href="../index.html">Inicio</a>
+            <a href="#productos">Destacados</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#productos">Productos</a>
+                <div id="submenu" class="dropdown">
+                    <i class="fas fa-caret-down"></i>
+                    <ul class="pags">
+                        <li><a href="../html/adidas.html">Zapatillas Adidas</a></li>
+                        <li><a href="../html/camiseta.html">Camisetas deportivas</a></li>
+                        <li><a href="../html/nike.html">Zapatillas Nike</a></li>
+                        <li><a href="../html/pelotas.html">Pelotas deportivas</a></li>
+                    </ul>
+                </div>
+        </nav>
+
+
+        <div class="icons">
+            <button><i class="fas fa-heart"></i></button>
+            <button id="carrito1"><i class="fas fa-shopping-cart"></i></button>
+            <button><a href="../html/login.html" class="fas fa-user"></a></button>
+        </div>
+
+    </header>
+
+    <!--Sección de productos-->
+
+    <section class="productos" id="productos">
+        <div class="box-container">
+            <div class="box">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <img src="../img/camiseta1.png">
+                <div class="content">
+                    <h3>Camiseta de Argentina</h3>
+                    <div class="precio">$15000.00 <span>$18500.00</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <button><a href="#" class="btn">Agregar al carrito</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Sección de comentarios y reviews-->
+    <section class="review" id="reviews">
+
+        <h1 class="heading"> Cliente <span>review</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="../img/pic1.png">
+                <h3>Soledad Perutti</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat, repudiandae sint veniam atque nisi suscipit reiciendis nihil esse eius sequi unde aspernatur quibusdam nesciunt ducimus?</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="../img/pic2.png">
+                <h3>Leandro Perez</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat, repudiandae sint veniam atque nisi suscipit reiciendis nihil esse eius sequi unde aspernatur quibusdam nesciunt ducimus?</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="../img/pic3.png">
+                <h3>Pedro Rossi</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat, repudiandae sint veniam atque nisi suscipit reiciendis nihil esse eius sequi unde aspernatur quibusdam nesciunt ducimus?</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--Carrito de compras-->
+
+    <section class="carrito">
+
+        <div class="container">
+            <div class="row">
+                <!-- Elementos generados a partir del JSON -->
+                <main id="items" class="lista"></main>
+                <!-- Carrito -->
+                <aside>
+                    <h2>Carrito</h2>
+                    <!-- Elementos del carrito -->
+                    <ul id="carrito" class="list-group"></ul>
+                    <hr>
+                    <!-- Precio total -->
+                    <p class="texto">Total: <span id="total"></span>$;</p>
+                    <button id="boton-vaciar" class="btnX">Vaciar</button>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!--Barra de búsqueda-->
+
+    <section class="filtro">
+        <aside>
+            <div class="wrapper">
+                <form class="search-input">
+                    <input type="text" placeholder="¿Que desea buscar?">
+                    <div class="autocom-box">
+                        <li>Camisetas de futbol</li>
+                        <li>Zapatillas Nike</li>
+                        <li>Zapatillas Adidas</li>
+                        <li>Pelotas de futbol</li>
+                    </div>
+                    <button class="icon"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </aside>
+    </section>
+
+
+    <!--Script JS-->
+    <script src="../js/general.js"></script>
+    <script src="../js/script.js"></script>
+
+</body>
+</html>

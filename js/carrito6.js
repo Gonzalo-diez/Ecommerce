@@ -1,39 +1,39 @@
 window.onload = function () {
     let baseDatos = [{
-        Id: 0,
-        producto: "Zapatillas Nike",
+        Id: 25,
+        producto: "Camiseta de San Lorenzo",
         precio: 15000,
-        imagen: './img/product-1.png'
+        imagen: '../img/camiseta6.png'
     },
     {
-        Id: 1,
-        producto: "Zapatillas Nike",
-        precio: 13000,
-        imagen: './img/product-2.png'
+        Id: 26,
+        producto: "Camiseta de Racing",
+        precio: 15000,
+        imagen: '../img/camiseta7.png'
     },
     {
-        Id: 2,
-        producto: "Zapatillas Nike",
-        precio: 16000,
-        imagen: './img/product-3.png'
+        Id: 27,
+        producto: "Camiseta de Huracan",
+        precio: 15000,
+        imagen: '../img/camiseta8.png'
     },
     {
-        Id: 3,
-        producto: "Zapatillas Nike",
-        precio: 15800,
-        imagen: './img/product-4.png'
+        Id: 28,
+        producto: "Camiseta de Barcelona",
+        precio: 15000,
+        imagen: '../img/camiseta9.png'
     },
     {
-        Id: 4,
-        producto: "Zapatillas Nike",
-        precio: 17000,
-        imagen: './img/product-5.png'
+        Id: 29,
+        producto: "Camiseta de Real Madrid",
+        precio: 15000,
+        imagen: '../img/camiseta10.png'
     },
     {
-        Id: 5,
-        producto: "Zapatillas Nike",
-        precio: 14500,
-        imagen: './img/product-6.png'
+        Id: 30,
+        producto: "Camiseta de Atletico Madrid",
+        precio: 15000,
+        imagen: '../img/camiseta11.png'
     }]
 
     let carrito = [];
@@ -202,17 +202,3 @@ window.onload = function () {
     calcularTotal();
     renderizarCarrito();
 };
-
-// Ajax
-const URLJSON = "./json/inventario.json"
-
-$("#carrito1").click(function() {
-    $.getJSON(URLJSON, function(respuesta, estado) {
-        if(estado === "success") {
-            let inventario = respuesta;
-            for(const dato of inventario) {
-                alert(dato.producto)
-            }
-        }
-    });
-});
