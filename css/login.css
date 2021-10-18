@@ -291,21 +291,18 @@ header .icons button a:hover {
 
 }
 
-@media (max-width:400px) {
-    html {
-        font-size: 50%;
-    }
-
-    .box {
-        margin-left: 150px;
-    }
-
-}
-
 @media (max-width:375px) {
     header .navbar .dropdown {
         margin-left: 29rem;
         margin-top: -6rem;
     }
     
+}
+
+@media (max-width:320px) {
+    header .navbar .dropdown {
+        margin-left: 29rem;
+        margin-top: -6rem;
+    }
+
 }

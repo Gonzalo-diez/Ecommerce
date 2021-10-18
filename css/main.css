@@ -677,7 +677,7 @@ header .icons button a:hover {
     }
 
     header .navbar .dropdown {
-        margin-left: 25rem;
+        margin-left: 29.5rem;
         margin-top: -6rem;
     }
 
@@ -692,24 +692,17 @@ header .icons button a:hover {
     
 }
 
-@media (max-width:400px) {
-    html {
-        font-size: 50%;
-    }
-
-    .inicio .slide-container .slide .image {
-        padding-bottom: 6rem;
-    }
-
-    .heading {
-        font-size: 3rem;
+@media (max-width:375px) {
+    header .navbar .dropdown {
+        margin-left: 26.5rem;
+        margin-top: -6rem;
     }
 
 }
 
-@media (max-width:375px) {
+@media (max-width:320px) {
     header .navbar .dropdown {
-        margin-left: 29rem;
+        margin-left: 23.5rem;
         margin-top: -6rem;
     }
 

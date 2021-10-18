@@ -467,28 +467,6 @@ header .icons button a:hover {
 
 }
 
-@media (max-width:400px) {
-    html {
-        font-size: 50%;
-    }
-
-    .productos {
-        margin-top: 30rem;
-    }
-
-    .productos .box-container {
-        width: 300px;
-    }
-
-    .productos .box-container img {
-        width: 25rem;
-    }
-
-    .filtro {
-        top: -135rem;
-    }
-}
-
 @media (max-width:375px) {
     header .navbar .dropdown {
         margin-left: 29rem;
