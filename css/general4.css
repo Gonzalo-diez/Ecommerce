@@ -128,7 +128,7 @@ header .icons button a:hover {
 .dropdown:hover .pags,
 .dropdown .pags.show {
     max-height: 400px;
-}  
+} 
 
 
 /*Sección de productos*/
@@ -204,11 +204,15 @@ header .icons button a:hover {
     color: var(--naranja);
 }
 
+.productos .box-container img {
+    width: 30rem;
+}
+
 /*Filtro de las páginas*/
 
 .filtro {
     position: relative;
-    margin-top: -290rem;
+    margin-top: -154rem;
 }
 
 .wrapper{
@@ -340,7 +344,7 @@ header .icons button a:hover {
 /*Carrito*/
 
 .carrito img {
-    width: 20%;
+    width: 15%;
 }
 
 .carrito div {
@@ -368,6 +372,8 @@ header .icons button a:hover {
 }
 
 .carrito .btn {
+    width: 10%;
+    height: 50%;
     width: 10%;
     height: 70%;
     border: .1rem solid rgba(0, 0, 0, 1);
@@ -458,32 +464,23 @@ header .icons button a:hover {
     }
 
     .productos {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-evenly;
-        margin-top: 15%;
-        margin-left: 2%;
         margin-top: 20rem;
     }
-    
+
     .productos .box-container {
-        width: 30%;
-        background: var(--blanco);
-        border-radius: 15px;
-        box-shadow: 7px 13px 37px;
-        margin: 30px;
+        width: 400px;
     }
 
     .productos .box-container img {
-        width: 15rem;
+        width: 30rem;
     }
 
     .filtro {
-        top: -27rem;
+        top: -36rem;
     }
 
 }
+
 
 @media (max-width:425px) {
     header .navbar .dropdown {
@@ -504,12 +501,12 @@ header .icons button a:hover {
     }
 
     .filtro {
-        top: -205rem;
+        top: -77rem;
     }
 
     .carrito .btn {
-        width: 5rem;
         height: 5rem;
+        width: 5rem;
         border: .1rem solid rgba(0, 0, 0, 1);
         border-radius: .5rem;
     }
@@ -523,16 +520,16 @@ header .icons button a:hover {
     }
 
     .filtro {
-        top: -210rem;
+        top: -85rem;
     }
 
     .carrito .btn {
-        width: 5rem;
         height: 5rem;
+        width: 5rem;
         border: .1rem solid rgba(0, 0, 0, 1);
         border-radius: .5rem;
     }
-    
+
 }
 
 @media (max-width:320px) {
@@ -542,14 +539,13 @@ header .icons button a:hover {
     }
 
     .filtro {
-        top: -220rem;
+        top: -99rem;
     }
 
     .carrito .btn {
+        height: 5rem;
         width: 5rem;
-        height: 3rem;
         border: .1rem solid rgba(0, 0, 0, 1);
         border-radius: .5rem;
     }
-
 }

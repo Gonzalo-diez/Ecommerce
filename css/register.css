@@ -239,7 +239,7 @@ header .icons button a:hover {
     }
 
     header .navbar .dropdown {
-        margin-left: 25rem;
+        margin-left: 30rem;
         margin-top: -6rem;
     }
 
@@ -260,29 +260,38 @@ header .icons button a:hover {
         overflow: visible;
     }
 
+    .box {
+        margin-left: 380px;
+    }
+
 }
 
 @media (max-width:425px) {
-    .box {
-        margin-left: 180px;
-    }
-}
-
-@media (max-width:400px) {
-    html {
-        font-size: 50%;
+    header .navbar .dropdown {
+        margin-left: 13rem;
+        margin-top: -6rem;
     }
 
     .box {
-        margin-left: 150px;
+        margin-left: 220px;
     }
-
 }
 
 @media (max-width:375px) {
     header .navbar .dropdown {
-        margin-left: 29rem;
+        margin-left: 12rem;
         margin-top: -6rem;
+    }
+}
+
+@media (max-width:320px) {
+    header .navbar .dropdown {
+        margin-left: 8rem;
+        margin-top: -6rem;
+    }
+
+    .box {
+        margin-left: 160px;
     }
 
 }

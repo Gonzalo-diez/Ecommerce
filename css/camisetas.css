@@ -380,9 +380,18 @@ header .icons button a:hover {
     border-radius: .5rem;
 }
 
-.carttio .borrar .btnx {
+.carrito .borrar .btnx {
     width: 10%;
     height: 70%;
+    background: var(--blanco);
+}
+
+.carrito .btnX {
+    background: var(--blanco);
+}
+
+.carrito .btnCompra {
+    background: var(--blanco);
 }
 
 /*Footer*/
@@ -538,5 +547,9 @@ header .icons button a:hover {
         width: 5rem;
         border: .1rem solid rgba(0, 0, 0, 1);
         border-radius: .5rem;
+    }
+
+    .productos {
+        margin-top: 20rem;
     }
 }

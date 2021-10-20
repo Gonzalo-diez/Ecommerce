@@ -380,9 +380,18 @@ header .icons button a:hover {
     border-radius: .5rem;
 }
 
-.carttio .borrar .btnx {
+.carrito .borrar .btnx {
     width: 10%;
     height: 70%;
+    background: var(--blanco);
+}
+
+.carrito .btnX {
+    background: var(--blanco);
+}
+
+.carrito .btnCompra {
+    background: var(--blanco);
 }
 
 /*Footer*/
@@ -437,7 +446,7 @@ header .icons button a:hover {
     }
 
     header .navbar .dropdown {
-        margin-left: 25rem;
+        margin-left: 30rem;
         margin-top: -6rem;
     }
 
@@ -467,7 +476,7 @@ header .icons button a:hover {
     }
 
     .filtro {
-        top: -28rem;
+        top: -42rem;
     }
 
 }
@@ -475,7 +484,7 @@ header .icons button a:hover {
 
 @media (max-width:425px) {
     header .navbar .dropdown {
-        margin-left: 26.5rem;
+        margin-left: 14rem;
         margin-top: -6rem;
     }
 
@@ -492,7 +501,7 @@ header .icons button a:hover {
     }
 
     .filtro {
-        top: -210rem;
+        top: -78rem;
     }
 
     .carrito .btn {
@@ -506,12 +515,12 @@ header .icons button a:hover {
 
 @media (max-width:375px) {
     header .navbar .dropdown {
-        margin-left: 24rem;
+        margin-left: 12rem;
         margin-top: -6rem;
     }
 
     .filtro {
-        top: -222rem;
+        top: -90rem;
     }
 
     .carrito .btn {
@@ -525,12 +534,12 @@ header .icons button a:hover {
 
 @media (max-width:320px) {
     header .navbar .dropdown {
-        margin-left: 21rem;
+        margin-left: 8rem;
         margin-top: -6rem;
     }
 
     .filtro {
-        top: -235rem;
+        top: -98rem;
         width: 30rem;
         margin-left: 1rem;
     }

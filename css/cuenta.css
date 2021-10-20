@@ -211,10 +211,18 @@ header .icons button a:hover {
     height: 50px;
 }
 
+.carrito .borrar .btnx {
+    width: 10%;
+    height: 70%;
+    background: var(--blanco);
+}
+
 .carrito .btnX {
-    border: .1rem solid rgba(0, 0, 0, 1);
-    border-radius: .5rem;
-    width: 10rem;
+    background: var(--blanco);
+}
+
+.carrito .btnCompra {
+    background: var(--blanco);
 }
 
 /*Sección novedades*/

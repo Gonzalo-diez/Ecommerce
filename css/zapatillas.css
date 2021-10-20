@@ -377,9 +377,18 @@ header .icons button a:hover {
     border-radius: .5rem;
 }
 
-.carttio .borrar .btnx {
+.carrito .borrar .btnx {
     width: 10%;
     height: 70%;
+    background: var(--blanco);
+}
+
+.carrito .btnX {
+    background: var(--blanco);
+}
+
+.carrito .btnCompra {
+    background: var(--blanco);
 }
 
 /*Media queries*/
