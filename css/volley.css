@@ -429,7 +429,7 @@ header .icons button a:hover {
     }
 
     header .navbar .dropdown {
-        margin-left: 45rem;
+        margin-left: 30rem;
         margin-top: -6rem;
     }
 
@@ -439,6 +439,7 @@ header .icons button a:hover {
 
     header .navbar .dropdown .pags.active {
         display: block;
+        transition: all 5s;
     }
 
     header .navbar .dropdown .pags li {
@@ -465,7 +466,7 @@ header .icons button a:hover {
 
 @media (max-width:425px) {
     header .navbar .dropdown {
-        margin-left: 27rem;
+        margin-left: 14rem;
         margin-top: -6rem;
     }
 
@@ -496,7 +497,7 @@ header .icons button a:hover {
 
 @media (max-width:375px) {
     header .navbar .dropdown {
-        margin-left: 24rem;
+        margin-left: 12rem;
         margin-top: -6rem;
     }
 
@@ -515,7 +516,7 @@ header .icons button a:hover {
 
 @media (max-width:320px) {
     header .navbar .dropdown {
-        margin-left: 21.5rem;
+        margin-left: 8rem;
         margin-top: -6rem;
     }
 

@@ -437,7 +437,7 @@ header .icons button a:hover {
     }
 
     header .navbar .dropdown {
-        margin-left: 45rem;
+        margin-left: 30rem;
         margin-top: -6rem;
     }
 
@@ -447,6 +447,7 @@ header .icons button a:hover {
 
     header .navbar .dropdown .pags.active {
         display: block;
+        transition: all 5s;
     }
 
     header .navbar .dropdown .pags li {
@@ -466,7 +467,7 @@ header .icons button a:hover {
     }
 
     .filtro {
-        top: -28rem;
+        top: -32rem;
     }
 
 }
@@ -474,7 +475,7 @@ header .icons button a:hover {
 
 @media (max-width:425px) {
     header .navbar .dropdown {
-        margin-left: 26.5rem;
+        margin-left: 14rem;
         margin-top: -6rem;
     }
 
@@ -491,7 +492,7 @@ header .icons button a:hover {
     }
 
     .filtro {
-        top: -210rem;
+        top: -215rem;
     }
 
     .carrito .btn {
@@ -505,12 +506,12 @@ header .icons button a:hover {
 
 @media (max-width:375px) {
     header .navbar .dropdown {
-        margin-left: 24rem;
+        margin-left: 12rem;
         margin-top: -6rem;
     }
 
     .filtro {
-        top: -222rem;
+        top: -228rem;
     }
 
     .carrito .btn {
@@ -524,14 +525,12 @@ header .icons button a:hover {
 
 @media (max-width:320px) {
     header .navbar .dropdown {
-        margin-left: 21rem;
+        margin-left: 8rem;
         margin-top: -6rem;
     }
 
     .filtro {
-        top: -235rem;
-        width: 30rem;
-        margin-left: 1rem;
+        top: -240rem;
     }
 
     .carrito .btn {

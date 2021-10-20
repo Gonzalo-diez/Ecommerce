@@ -219,20 +219,6 @@ header .icons button a:hover {
 }
 /*Media queries*/
 
-@media (max-width:991px) {
-    html {
-        font-size: 55%;
-    }
-
-    header {
-        padding: 2rem;
-    }
-
-    section {
-        padding: 2rem
-    }
-}
-
 @media (max-width:768px) {
     #menu-bar {
         display: block;
@@ -267,20 +253,21 @@ header .icons button a:hover {
         margin-top: -6rem;
     }
 
-    .box {
-        margin-left: 350px;
-    }
-
     header .navbar .dropdown .pags {
         display: none;
     }
 
     header .navbar .dropdown .pags.active {
         display: block;
+        transition: all 5s;
     }
 
     header .navbar .dropdown .pags li {
         overflow: visible;
+    }
+    
+    .box {
+        margin-left: 350px;
     }
 
 }

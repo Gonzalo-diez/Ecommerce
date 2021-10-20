@@ -383,7 +383,7 @@ header .icons button a:hover {
     }
 
     header .navbar .dropdown {
-        margin-left: 45rem;
+        margin-left: 30rem;
         margin-top: -6rem;
     }
 
@@ -393,6 +393,7 @@ header .icons button a:hover {
 
     header .navbar .dropdown .pags.active {
         display: block;
+        transition: all 5s;
     }
 
     header .navbar .dropdown .pags li {
@@ -400,7 +401,7 @@ header .icons button a:hover {
     }
 
     .filtro {
-        top: 40rem;
+        top: 32rem;
     }
 
     .productos {
@@ -420,7 +421,7 @@ header .icons button a:hover {
 
 @media (max-width:425px) {
     header .navbar .dropdown {
-        margin-left: 27rem;
+        margin-left: 14rem;
         margin-top: -6rem;
     }
 
@@ -437,7 +438,7 @@ header .icons button a:hover {
     }
 
     .filtro {
-        top: -172rem;
+        top: -182rem;
     }
 
     .carrito .btn {
@@ -449,12 +450,12 @@ header .icons button a:hover {
 
 @media (max-width:375px) {
     header .navbar .dropdown {
-        margin-left: 25rem;
+        margin-left: 12rem;
         margin-top: -6rem;
     }
 
     .filtro {
-        top: -182rem;
+        top: -192rem;
     }
 
     .carrito .btn {
@@ -466,12 +467,12 @@ header .icons button a:hover {
 
 @media (max-width:320px) {
     header .navbar .dropdown {
-        margin-left: 23.5rem;
+        margin-left: 8rem;
         margin-top: -6rem;
     }
 
     .filtro {
-        top: -182rem;
+        top: -190rem;
     }
 
     .carrito .btn {

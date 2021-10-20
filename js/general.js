@@ -9,7 +9,7 @@ let suggestions = [
     "Pelotas de Volley",
     "Pelotas de Tenis",
     "Pelotas de Ping Pong",
-    "Camisetas de futbol",
+    "Camisetas de Futbol",
     "Camisetas de Argentina",
     "Camisetas de Boca",
     "Camisetas de River",

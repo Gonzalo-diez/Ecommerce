@@ -209,21 +209,6 @@ header .icons button a:hover {
 
 /*Media queries*/
 
-@media (max-width:991px) {
-    html {
-        font-size: 55%;
-    }
-
-    header {
-        padding: 2rem;
-    }
-
-    section {
-        padding: 2rem
-    }
-    
-}
-
 @media (max-width:768px) {
     #menu-bar {
         display: block;
@@ -268,6 +253,7 @@ header .icons button a:hover {
 
     header .navbar .dropdown .pags.active {
         display: block;
+        transition: all 5s;
     }
 
     header .navbar .dropdown .pags li {

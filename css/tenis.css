@@ -261,7 +261,7 @@ header .icons button a:hover {
 
 .filtro {
     position: relative;
-    margin-top: -153.5rem;
+    margin-top: -300rem;
 }
 
 .wrapper{
@@ -399,20 +399,6 @@ header .icons button a:hover {
 
 /*Media queries*/
 
-@media (max-width:991px) {
-    html {
-        font-size: 55%;
-    }
-
-    header {
-        padding: 2rem;
-    }
-
-    section {
-        padding: 2rem
-    }
-}
-
 @media (max-width:768px) {
     #menu-bar {
         display: block;
@@ -443,7 +429,7 @@ header .icons button a:hover {
     }
 
     header .navbar .dropdown {
-        margin-left: 25rem;
+        margin-left: 30rem;
         margin-top: -6rem;
     }
 
@@ -453,6 +439,7 @@ header .icons button a:hover {
 
     header .navbar .dropdown .pags.active {
         display: block;
+        transition: all 5s;
     }
 
     header .navbar .dropdown .pags li {
@@ -472,14 +459,14 @@ header .icons button a:hover {
     }
 
     .filtro {
-        top: -370rem;
+        top: -212rem;
     }
 
 }
 
 @media (max-width:425px) {
     header .navbar .dropdown {
-        margin-left: 29.5rem;
+        margin-left: 14rem;
         margin-top: -6rem;
     }
 
@@ -496,7 +483,7 @@ header .icons button a:hover {
     }
 
     .filtro {
-        top: -370rem;
+        top: -232rem;
     }
 
     .carrito .btn {
@@ -511,12 +498,12 @@ header .icons button a:hover {
 
 @media (max-width:375px) {
     header .navbar .dropdown {
-        margin-left: 26.5rem;
+        margin-left: 12rem;
         margin-top: -6rem;
     }
 
     .filtro {
-        top: -362rem;
+        top: -220rem;
     }
 
     .carrito .btn {
@@ -531,12 +518,12 @@ header .icons button a:hover {
 
 @media (max-width:320px) {
     header .navbar .dropdown {
-        margin-left: 23.5rem;
+        margin-left: 8rem;
         margin-top: -6rem;
     }
 
     .filtro {
-        top: -368rem;
+        top: -230rem;
     }
 
     .carrito .btn {
