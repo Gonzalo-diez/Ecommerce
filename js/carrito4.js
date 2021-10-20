@@ -8,7 +8,7 @@ window.onload = function () {
     {
         Id: 15,
         producto: "Camiseta de Boca Jr",
-        precio: 13000,
+        precio: 15000,
         imagen: '../img/camiseta2.png'
     },
     {
@@ -30,6 +30,7 @@ window.onload = function () {
     const DOMcarrito = document.querySelector('#carrito');
     const DOMtotal = document.querySelector('#total');
     const DOMbotonVaciar = document.querySelector('#boton-vaciar');
+    const DOMbotonComprar = document.querySelector('#boton-comprar');
     const miLocalStorage = window.localStorage;
 
     function renderizarProductos() {
@@ -169,6 +170,11 @@ window.onload = function () {
         localStorage.clear();
     }
 
+    function comprarCarrito() {
+        // Mensaje de compra de los productos del carrito
+        alert("Su compra ha sido realizada");
+    }
+
     function guardarCarritoEnLocalStorage () {
         miLocalStorage.setItem('carrito', JSON.stringify(carrito));
     }
@@ -183,6 +189,7 @@ window.onload = function () {
 
     // Eventos
     DOMbotonVaciar.addEventListener('click', vaciarCarrito);
+    DOMbotonComprar.addEventListener('click',comprarCarrito);
 
     // Inicio
     cargarCarritoDeLocalStorage();

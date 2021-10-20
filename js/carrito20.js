@@ -12,6 +12,7 @@ window.onload = function () {
     const DOMcarrito = document.querySelector('#carrito');
     const DOMtotal = document.querySelector('#total');
     const DOMbotonVaciar = document.querySelector('#boton-vaciar');
+    const DOMbotonComprar = document.querySelector('#boton-comprar');
     const miLocalStorage = window.localStorage;
 
     function renderizarProductos() {
@@ -151,6 +152,11 @@ window.onload = function () {
         localStorage.clear();
     }
 
+    function comprarCarrito() {
+        // Mensaje de compra de los productos del carrito
+        alert("Su compra ha sido realizada");
+    }
+
     function guardarCarritoEnLocalStorage () {
         miLocalStorage.setItem('carrito', JSON.stringify(carrito));
     }
@@ -165,6 +171,7 @@ window.onload = function () {
 
     // Eventos
     DOMbotonVaciar.addEventListener('click', vaciarCarrito);
+    DOMbotonComprar.addEventListener('click',comprarCarrito);
 
     // Inicio
     cargarCarritoDeLocalStorage();
@@ -172,3 +179,17 @@ window.onload = function () {
     calcularTotal();
     renderizarCarrito();
 };
+
+// Ajax
+const URLJSON = "../json/inventario20.json"
+
+$("#carrito1").click(function() {
+    $.getJSON(URLJSON, function(respuesta, estado) {
+        if(estado === "success") {
+            let inventario = respuesta;
+            for(const dato of inventario) {
+                alert(dato.producto)
+            }
+        }
+    });
+});
